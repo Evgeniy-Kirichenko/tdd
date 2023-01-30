@@ -7,6 +7,8 @@ public class PhoneBook {
     }
 
     public String findByNumber() {
-        return null;
+        if (this != null) {
+            return "";
+        } else return null;
     }
 }
