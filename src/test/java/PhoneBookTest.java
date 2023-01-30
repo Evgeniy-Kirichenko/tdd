@@ -10,4 +10,11 @@ public class PhoneBookTest {
         var result = phoneBook.add();
         assertEquals(expected,result);
     }
+
+    @Test
+    public void findByNumber() {
+        String expected = "";
+        var result = phoneBook.findByNumber();
+        assertEquals(expected,result);
+    }
 }
