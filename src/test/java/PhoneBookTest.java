@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PhoneBookTest {
     PhoneBook phoneBook = new PhoneBook();
@@ -8,21 +9,27 @@ public class PhoneBookTest {
     public void addTest() {
         boolean expected = true;
         var result = phoneBook.add();
-        assertEquals(expected,result);
+        assertEquals(expected, result);
     }
 
     @Test
-    public void findByNumber() {
+    public void findByNumberTest() {
         String expected = "";
         var result = phoneBook.findByNumber();
-        assertEquals(expected,result);
+        assertEquals(expected, result);
     }
 
-@Test
-    public void findByName() {
+    @Test
+    public void findByNameTest() {
         String expected = "";
         var result = phoneBook.findByName();
-        assertEquals(expected,result);
+        assertEquals(expected, result);
     }
-    
+
+    @Test
+    public void printAllNamesTest() {
+        String expected = "";
+        var result = phoneBook.printAllNames();
+        assertEquals(expected, result);
+    }
 }
