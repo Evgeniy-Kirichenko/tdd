@@ -1,6 +1,9 @@
 public class PhoneBook {
-    
+
     public boolean add() {
-        return false;
+        if (this != null) {
+            return true;
+        } else return false;
     }
+
 }
