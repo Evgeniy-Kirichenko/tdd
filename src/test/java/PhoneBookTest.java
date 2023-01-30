@@ -17,11 +17,12 @@ public class PhoneBookTest {
         var result = phoneBook.findByNumber();
         assertEquals(expected,result);
     }
-    
+
 @Test
     public void findByName() {
         String expected = "";
         var result = phoneBook.findByName();
         assertEquals(expected,result);
     }
+    
 }
